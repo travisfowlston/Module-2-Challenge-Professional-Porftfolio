@@ -1,21 +1,119 @@
 :root{
     --main-bg: #cbd2dc;
-    --main-font-color: #6b0099; 
+    --header-font-color: #6b0099;
+    --border-color: #444343;
+    --font-color: white;
 }
 
-header nav {
-    padding-top: 10px;
+* {
+    margin:0;
+}
+
+body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
+    background-color: var(--main-bg);
+}
+
+header {
     display: flex;
-    justify-content: center;
+    align-items: baseline;
+    border-bottom: 4px solid var(--border-color);
+    background-color: var(--main-bg); 
+}
+
+header h1 {
+    display: flex;
+    flex: 1;
+    color: var(--header-font-color);
+    font-size: 40px;
+    margin-left: 15px;
 }
 
 header nav ul {
-    list-style-type: none;
+    display: flex;
+    list-style-type: none; 
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-left: auto;
+    display: flex;
+    margin-right: 25px; 
+    font-size: 23px; 
+    white-space: nowrap;
+}
+
+a{
+   text-decoration: none;
+   color: var(--header-font-color); 
+}
+
+a:hover {
+    
+}
+
+.about-me {
+    
+}
+
+.about-me h2{
+    
+}
+
+.about-me img{
+    max-height: 215px;
+}
+
+.about-me p{
+    
+}
+
+
+.card.large-card {
+    
+}
+
+.card-2{
+   
+}
+
+.card-3{
+    
+}
+
+.card-4{
+    
+}
+
+.card-5{
+    
+}
+
+section.all-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--border-color);
+    flex: 1 0 49%;
+    height: 100px; 
+}
+
+
+.card:hover {
+    
+}
+    
+
+.contact-me {
+    
+}
+
+.contact-me h2{
+    
+}
+
+footer {
+    
+}
+
+@media screen and (max-width: 800px) {
+    
 }
