@@ -3,6 +3,7 @@
     --header-font-color: #6b0099;
     --border-color: #444343;
     --font-color: white;
+    --extra-bg: #969696;
 }
 
 * {
@@ -16,14 +17,14 @@ body {
 
 header {
     display: flex;
+    flex: 1;
     align-items: baseline;
     border-bottom: 4px solid var(--border-color);
-    background-color: var(--main-bg); 
+    background-color: var(--extra-bg); 
 }
 
 header h1 {
     display: flex;
-    flex: 1;
     color: var(--header-font-color);
     font-size: 40px;
     margin-left: 15px;
@@ -38,24 +39,29 @@ header nav ul li {
     display: flex;
     margin-right: 25px; 
     font-size: 23px; 
-    white-space: nowrap;
 }
 
 a{
    text-decoration: none;
-   color: var(--header-font-color); 
+   color: var(--font-color); 
 }
 
 a:hover {
-    
+    box-shadow: inset 0px 0px 8px var(--font-color), 0 0 15px var(--header-font-color);
 }
 
 .about-me {
-    
+    margin-top: 40px;
+    margin-left: 30px;
+    display: flex;
+    align-items: left;
 }
 
 .about-me h2{
-    
+    color: var(--header-font-color);
+    border-right: 5px solid;
+    margin-left: 20px;
+    font-size: 30px;
 }
 
 .about-me img{
@@ -63,39 +69,81 @@ a:hover {
 }
 
 .about-me p{
-    
+    flex: 1;
+    text-align: left;
+    margin-right: 15px;
+    font-size: 25px;
 }
 
+section.my-projects {
+    margin-top: 40px;
+    margin-left: 30px;
+    display: flex;
+    align-items: left;
+}
 
+section.my-projects h2 {
+    color: var(--header-font-color);
+    border-right: 5px solid;
+    margin-left: 20px;
+    font-size: 30px;
+}
 .card.large-card {
-    
+    grid-column: span 2;
+    border: 5px solid;
+    background-image: url(images/digital-marketing-meeting.jpg);
+    background-size: cover;
+    width: 800px;
+    height: 500px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    text-align: center;
+    color: var(--border-color);
 }
 
 .card-2{
-   
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--border-color);  
+    text-align: center;
 }
 
 .card-3{
-    
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--border-color);  
+    text-align: center;
 }
 
 .card-4{
-    
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--border-color);  
+    text-align: center;
 }
 
 .card-5{
-    
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--border-color);  
+    text-align: center;
 }
 
 section.all-cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--border-color);
-    flex: 1 0 49%;
-    height: 100px; 
+   
 }
 
+.card {
+    width: 300px;
+    height: 150px;
+    border: solid;
+    margin: 3px;
+    font-size: 30px;
+}
 
 .card:hover {
     
@@ -103,15 +151,33 @@ section.all-cards {
     
 
 .contact-me {
-    
+    margin-top: 40px;
+    margin-left: 30px;
+    display: flex;
+    align-items: baseline; 
 }
 
 .contact-me h2{
-    
+    color: var(--header-font-color);
+    border-right: 5px solid;
+    margin-left: 20px;
+    font-size: 30px;
+}
+section.contact-me ul {
+    display: flex;
+    list-style-type: none;
 }
 
+section.contact-me ul li {
+    margin-right: 25px; 
+    font-size: 23px;
+}
 footer {
-    
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    border-top: 5px solid var(--border-color);
+    background-color: var(--extra-bg);
 }
 
 @media screen and (max-width: 800px) {
