@@ -19,7 +19,7 @@ The Module 2 Challenge objective was to create a professional portfolio so that 
 
 ## Credits
 
-- Filler pictures were take from the Module 1 Challenge by the UC Davis Bootcamp.
+- Filler pictures were taken from the Module 1 Challenge by the UC Davis Bootcamp.
 - Portfolio was completed by Travis Fowlston.
 
 ## License
