@@ -4,10 +4,11 @@
     --border-color: #444343;
     --font-color: white;
     --extra-bg: #969696;
+    --extra-font: #4e395f;
 }
 
 * {
-    margin:0;
+    margin: 0;
 }
 
 body {
@@ -26,8 +27,8 @@ header {
 header h1 {
     display: flex;
     color: var(--header-font-color);
-    font-size: 40px;
-    margin-left: 15px;
+    font-size: 45px;
+    margin-left: 23px;
 }
 
 header nav ul {
@@ -43,7 +44,8 @@ header nav ul li {
 
 a{
    text-decoration: none;
-   color: var(--font-color); 
+   color: var(--extra-font); 
+   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 a:hover {
@@ -61,7 +63,7 @@ a:hover {
     color: var(--header-font-color);
     border-right: 5px solid;
     margin-left: 20px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .about-me img{
@@ -72,7 +74,7 @@ a:hover {
     flex: 1;
     text-align: left;
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 section.my-projects {
@@ -80,88 +82,87 @@ section.my-projects {
     margin-left: 30px;
     display: flex;
     align-items: left;
+    flex-wrap: wrap;
 }
 
 section.my-projects h2 {
     color: var(--header-font-color);
     border-right: 5px solid;
     margin-left: 20px;
-    font-size: 30px;
+    font-size: 40px;
 }
+
+section.all-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+    width: 800px; 
+    justify-content: center;
+    align-content: center;
+    margin: 0 20px;
+}
+
+.card {
+    width: 400;
+    height: 200px;
+    border: 5px solid;
+    margin: 5px;
+    font-size: 35px;
+}
+
 .card.large-card {
     grid-column: span 2;
     border: 5px solid;
     background-image: url(images/digital-marketing-meeting.jpg);
     background-size: cover;
     width: 800px;
-    height: 500px;
+    height: 400px;
     margin-top: 25px;
-    flex-wrap: wrap;
     text-align: center;
     color: var(--border-color);
 }
 
-.card-2{
-    background-image: url();
-    background-repeat: no-repeat;
+.card-2 {
+    background-image: url(images/social-media-marketing.jpg);
     background-size: cover;
     color: var(--border-color);  
     text-align: center;
 }
 
-.card-3{
-    background-image: url();
-    background-repeat: no-repeat;
+.card-3 {
+    background-image: url(images/search-engine-optimization.jpg);
     background-size: cover;
     color: var(--border-color);  
     text-align: center;
 }
 
-.card-4{
-    background-image: url();
-    background-repeat: no-repeat;
+.card-4 {
+    background-image: url(images/coding.jpg);
     background-size: cover;
     color: var(--border-color);  
     text-align: center;
 }
 
-.card-5{
-    background-image: url();
-    background-repeat: no-repeat;
+.card-5 {
+    background-image: url(images/digital-media.jpg);
     background-size: cover;
     color: var(--border-color);  
     text-align: center;
-}
-
-section.all-cards {
-   
-}
-
-.card {
-    width: 300px;
-    height: 150px;
-    border: solid;
-    margin: 3px;
-    font-size: 30px;
-}
-
-.card:hover {
-    
 }
     
-
 .contact-me {
     margin-top: 40px;
     margin-left: 30px;
     display: flex;
-    align-items: baseline; 
+    flex: 0 1 20%;
+    align-items: left;
 }
 
 .contact-me h2{
     color: var(--header-font-color);
     border-right: 5px solid;
     margin-left: 20px;
-    font-size: 30px;
+    font-size: 40px;
 }
 section.contact-me ul {
     display: flex;
@@ -169,8 +170,8 @@ section.contact-me ul {
 }
 
 section.contact-me ul li {
-    margin-right: 25px; 
-    font-size: 23px;
+    margin-right: 45px; 
+    font-size: 35px;
 }
 footer {
     display: flex;
@@ -178,8 +179,4 @@ footer {
     font-size: 15px;
     border-top: 5px solid var(--border-color);
     background-color: var(--extra-bg);
-}
-
-@media screen and (max-width: 800px) {
-    
 }
