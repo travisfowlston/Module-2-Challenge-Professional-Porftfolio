@@ -1,3 +1,4 @@
+/* Created a root for all base colors */
 :root{
     --main-bg: #cbd2dc;
     --header-font-color: #6b0099;
@@ -7,6 +8,7 @@
     --extra-font: #4e395f;
 }
 
+/* General Style */
 * {
     margin: 0;
 }
@@ -15,7 +17,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--main-bg);
 }
-
+/* Header and Nav Style */
 header {
     display: flex;
     flex: 1;
@@ -42,16 +44,19 @@ header nav ul li {
     font-size: 23px; 
 }
 
-a{
+/* Added a transition to the effect */
+a {
    text-decoration: none;
    color: var(--extra-font); 
    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
+/* added an effect */
 a:hover {
     box-shadow: inset 0px 0px 8px var(--font-color), 0 0 15px var(--header-font-color);
 }
 
+/* About Me Style */
 .about-me {
     margin-top: 40px;
     margin-left: 30px;
@@ -77,6 +82,7 @@ a:hover {
     font-size: 20px;
 }
 
+/* My Projects Style */
 section.my-projects {
     margin-top: 40px;
     margin-left: 30px;
@@ -92,24 +98,25 @@ section.my-projects h2 {
     font-size: 40px;
 }
 
+/* Created a grid to make the cards */
 section.all-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2px;
-    width: 800px; 
     justify-content: center;
     align-content: center;
+    display: grid;
+    grid-gap: 3px;
+    width: 800px; 
     margin: 0 20px;
 }
 
 .card {
-    width: 400;
     height: 200px;
-    border: 5px solid;
+    width: 400;
     margin: 5px;
     font-size: 35px;
+    border: 5px solid;
 }
 
+/* Made a large card that spans two columns */
 .card.large-card {
     grid-column: span 2;
     border: 5px solid;
@@ -158,7 +165,8 @@ section.all-cards {
     align-items: left;
 }
 
-.contact-me h2{
+/* Contact Me Style */
+.contact-me h2 {
     color: var(--header-font-color);
     border-right: 5px solid;
     margin-left: 20px;
@@ -173,6 +181,8 @@ section.contact-me ul li {
     margin-right: 45px; 
     font-size: 35px;
 }
+
+/* Created a footer */
 footer {
     display: flex;
     justify-content: center;
