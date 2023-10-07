@@ -20,9 +20,10 @@ body {
 /* Header and Nav Style */
 header {
     display: flex;
-    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: baseline;
-    border-bottom: 4px solid var(--border-color);
+    border-bottom: 5px solid var(--border-color);
     background-color: var(--extra-bg); 
 }
 
@@ -30,7 +31,7 @@ header h1 {
     display: flex;
     color: var(--header-font-color);
     font-size: 45px;
-    margin-left: 23px;
+    margin-left: 30px;
 }
 
 header nav ul {
@@ -61,7 +62,9 @@ a:hover {
     margin-top: 40px;
     margin-left: 30px;
     display: flex;
-    align-items: left;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .about-me h2{
@@ -73,12 +76,14 @@ a:hover {
 
 .about-me img{
     max-height: 215px;
+    margin-left: 30px;
+    border: 5px solid var(--border-color);
 }
 
 .about-me p{
     flex: 1;
     text-align: left;
-    margin-right: 15px;
+    margin-left: 30px;
     font-size: 20px;
 }
 
@@ -89,6 +94,7 @@ section.my-projects {
     display: flex;
     align-items: left;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 section.my-projects h2 {
@@ -102,15 +108,15 @@ section.my-projects h2 {
 section.all-cards {
     justify-content: center;
     align-content: center;
-    display: grid;
-    grid-gap: 3px;
+    display: flex;
+    flex-wrap: wrap;
     width: 800px; 
     margin: 0 20px;
 }
 
 .card {
     height: 200px;
-    width: 400;
+    width: 350px;
     margin: 5px;
     font-size: 35px;
     border: 5px solid;
@@ -122,7 +128,7 @@ section.all-cards {
     border: 5px solid;
     background-image: url(images/digital-marketing-meeting.jpg);
     background-size: cover;
-    width: 800px;
+    width: 720px;
     height: 400px;
     margin-top: 25px;
     text-align: center;
@@ -161,8 +167,9 @@ section.all-cards {
     margin-top: 40px;
     margin-left: 30px;
     display: flex;
-    flex: 0 1 20%;
-    align-items: left;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
 }
 
 /* Contact Me Style */
@@ -178,7 +185,7 @@ section.contact-me ul {
 }
 
 section.contact-me ul li {
-    margin-right: 45px; 
+    margin-left: 60px; 
     font-size: 35px;
 }
 
