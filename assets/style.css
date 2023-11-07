@@ -132,13 +132,13 @@ section.all-cards {
     height: 400px;
     margin-top: 25px;
     text-align: center;
-    color: var(--border-color);
+    color: var(--font-color);
 }
 
 .card-2 {
-    background-image: url(images/social-media-marketing.jpg);
+    background-image: url(images/deployment-screenshot.JPG);
     background-size: cover;
-    color: var(--border-color);  
+    color: var(--font-color);  
     text-align: center;
 }
 
